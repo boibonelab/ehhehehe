@@ -1,143 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content=
-  "width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex">
-  <link rel="icon" id="icon" href="/assets/img/doge.jpg">
-  <script src=
-  "https://cdnjs.cloudflare.com/ajax/libs/script.js/2.0.2/script.min.js"
-  integrity=
-  "sha512-UWtTDM6wtl/qutDD6i1JOGZGiEd92dveVzuLl8sMBkMHlOHcbZdexM7ZrKkeaugW7vhqDnWc2pPD/ohEV+BBbg=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" type=
-  "6380b0b527aee009c05097d8-text/javascript"></script>
-  <link rel="stylesheet" href="/assets/css/app.css">
-  <link rel="stylesheet" href="/assets/css/menu.css">
-  <script rel="preload" src=
-  "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
-  type="6380b0b527aee009c05097d8-text/javascript"></script>
-  <script src="/assets/js/functions.js" type=
-  "6380b0b527aee009c05097d8-text/javascript"></script>
-  <script src="/assets/js/anym.js" type=
-  "6380b0b527aee009c05097d8-text/javascript"></script>
-  <title>Doge | V4</title>
-  <script async src=
-  "https://www.googletagmanager.com/gtag/js?id=G-6YEQ7Q0XRC" type=
-  "6380b0b527aee009c05097d8-text/javascript"></script>
-  <script type="6380b0b527aee009c05097d8-text/javascript">
-  window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-6YEQ7Q0XRC');
-  </script>
-</head>
-<body>
-  <div id="contextMenu" class="context-menu themesExcluded" style=
-  "--ripple-duration: 300ms;">
-    <div class="context-menu-item with-submenu themesExcluded" id=
-    "contextItem" anim="ripple" onclick=
-    "if (!window.__cfRLUnblockHandlers) return false; toggleSubmenu(event)"
-    data-cf-modified-6380b0b527aee009c05097d8-="">
-      Tab Cloak
-    </div>
-    <div class="context-submenu themesExcluded" id="contextItem">
-      <div class="context-menu-item themesExcluded" id=
-      "contextItem" anim="ripple" onclick=
-      "if (!window.__cfRLUnblockHandlers) return false; tabCloak()"
-      data-cf-modified-6380b0b527aee009c05097d8-="">
-        Enable
-      </div>
-      <div class="context-menu-item themesExcluded" anim="ripple"
-      onclick=
-      "if (!window.__cfRLUnblockHandlers) return false; disableTabCloak()"
-      data-cf-modified-6380b0b527aee009c05097d8-="">
-        Disable
-      </div>
-    </div>
-    <div class="context-menu-item with-submenu themesExcluded" id=
-    "contextItem" anim="ripple" onclick=
-    "if (!window.__cfRLUnblockHandlers) return false; toggleSubmenu2(event)"
-    data-cf-modified-6380b0b527aee009c05097d8-="">
-      Last Visited Site
-    </div>
-    <div class="context-submenu themesExcluded" id="contextItem">
-      <div class="context-menu-item themesExcluded" id=
-      "contextItem" anim="ripple" onclick=
-      "if (!window.__cfRLUnblockHandlers) return false; vSite()"
-      data-cf-modified-6380b0b527aee009c05097d8-="">
-        Visit Last Site
-      </div>
-      <div class="context-menu-item themesExcluded" id=
-      "contextItem" anim="ripple" onclick=
-      "if (!window.__cfRLUnblockHandlers) return false; vAG()"
-      data-cf-modified-6380b0b527aee009c05097d8-="">
-        Visit Last App/Game
-      </div>
-    </div>
-    <div class="context-menu-item themesExcluded" id="contextItem"
-    onclick=
-    "if (!window.__cfRLUnblockHandlers) return false; openWindow()"
-    data-cf-modified-6380b0b527aee009c05097d8-="">
-      About:Blank Cloak
-    </div>
-    <div class="context-menu-item themesExcluded" id="contextItem"
-    onclick=
-    "if (!window.__cfRLUnblockHandlers) return false; openSettings()"
-    data-cf-modified-6380b0b527aee009c05097d8-="">
-      View all Settings
-    </div>
-  </div>
-  <nav id="mytopnav">
-    <button class="button-6" anim="ripple" onclick=
-    "if (!window.__cfRLUnblockHandlers) return false; send('/settings.html')"
-    data-cf-modified-6380b0b527aee009c05097d8-="">Settings</button>
-    <button class="button-6" anim="ripple" onclick=
-    "if (!window.__cfRLUnblockHandlers) return false; send('/gms')"
-    data-cf-modified-6380b0b527aee009c05097d8-="">Games</button>
-    <button class="button-6" anim="ripple" onclick=
-    "if (!window.__cfRLUnblockHandlers) return false; send('/apps')"
-    data-cf-modified-6380b0b527aee009c05097d8-="">Apps</button><br>
-    <a href="#" class="title" anim="ripple"><img src=
-    "/assets/img/doge.jpg" style="width:22px;height:22px;" id=
-    "logo"> Doge Unblocker</a>
-  </nav>
-  <div style=
-  "text-align:center;color:white;margin-top: 80px;z-index:1;"
-  class="themesExcluded">
-    <div class="themesExcluded">
-      <i class="bi bi-search search" id="search"></i>
-      <form method="post" id="uform" autocomplete="off" class=
-      "themesExcluded" style="z-index:1;" name="uform">
-        <input type="text" name="url" class=
-        "form__input proxybar themesExcluded" id="name" tag=
-        "searchbar" style=
-        "font-family:poppins;font-size:20px;z-index:1;"
-        placeholder="Type URL or search query">
-        <p class="splashText themesExcluded" id="placeholder"></p>
-      </form>
-    </div>
-    <p id="time" class="clock footer"></p>
-    <div class="footer themesExcluded" style="text-align:right;">
-      <a href="https://discord.gg/sWPHCdxCPU" target="new"></a>
-      <a href="https://github.com/dogenetwork/v4" target="new"></a>
-    </div>
-    <div class="bottom-right-content themesExcluded">
-      <a href="/credits">Credits</a>
-    </div>
-    <script rel="preload" src="/assets/js/main.js" type=
-    "6380b0b527aee009c05097d8-text/javascript"></script> 
-    <script src="/assets/js/themes.js" type=
-    "6380b0b527aee009c05097d8-text/javascript"></script> 
-    <script src="/assets/js/particles.js" type=
-    "6380b0b527aee009c05097d8-text/javascript"></script> 
-    <script src="/assets/js/index.js" type=
-    "6380b0b527aee009c05097d8-text/javascript"></script>
-  </div>
-  <script type="6380b0b527aee009c05097d8-text/javascript" src=
-  '//cessationhamster.com/51/28/d8/5128d85a89933217b44a3dc6cbfdae1b.js'></script>
-  <!--<script type='text/javascript' src='//pl23223445.highcpmgate.com/cd/8b/e8/cd8be834986287feec9d123b68278fc2.js'></script>-->
-  <script type="6380b0b527aee009c05097d8-text/javascript" src=
-  '//cessationhamster.com/df/d2/e1/dfd2e1c094b00a158058ce0068d7df84.js'></script>
-  
-  <script src=
-  "/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
-  data-cf-settings="6380b0b527aee009c05097d8-|49" defer></script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en" data-theme="day"> <head><meta charset="utf-8"><title>Holy Unblocker</title><link rel="shortcut icon" href="/h.ico"><meta name="viewport" content="width=device-width"> <meta name="description" content="Holy Unblocker is a web proxy service with support for many sites. Unblock websites on Chromebooks at school and work for free!"> <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What proxies does Holy Unblocker have?","acceptedAnswer":{"@type":"Answer","text":"Holy Unblocker is powered by Ultraviolet."}},{"@type":"Question","name":"Where is Holy Unblocker's source code?","acceptedAnswer":{"@type":"Answer","text":"Holy Unblocker's source code can be found at https://github.com/holy-unblocker/website2"}},{"@type":"Question","name":"Where is Ultraviolet's source code?","acceptedAnswer":{"@type":"Answer","text":"Ultraviolet's source code can be found at https://github.com/titaniumnetwork-dev/Ultraviolet"}}]}</script> <script type="application/ld+json">{"@context":"https://schema.org","@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://holyubofficial.net/uv?q={search_term_string}"},"query-input":"required name=search_term_string"}</script> <!-- Set the theme color based on user preference --><meta name="theme-color" content="#d8dee9"><link rel="manifest" href="/manifest.json"><meta name="twitter:card" content="summary_large_image"><meta name="og:image" content="/tnbanner.jpg"><link rel="sitemap" href="/sitemap-index.xml"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="stylesheet" href="/_astro/flash.jgBwHDWf.css">
+<link rel="stylesheet" href="/_astro/index.Bi58wRuV.css">
+<link rel="stylesheet" href="/_astro/index.XoUPVT1v.css">
+<link rel="stylesheet" href="/_astro/_id_.C_Gk8FE6.css">
+<link rel="stylesheet" href="/_astro/index.E_-NvtNH.css">
+<link rel="stylesheet" href="/_astro/index.wK0Eof_R.css">
+<link rel="stylesheet" href="/_astro/index.Ca7zsf0I.css"><script type="module" src="/_astro/hoisted.DzIXh7FJ.js"></script></head> <body> <div id="eckey" style="display:none">8b1ff134a24c4a8200260150047da41e</div> <nav class="_nav_s8x7c_5" tabindex="0" data-astro-transition-persist="astro-mmzz6aw6-2"> <div class="_button_s8x7c_38 _center_s8x7c_59" onclick="setNavExpanded(true)"><svg width="24" height="24" fill="none"><path d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"/></svg></div> <a href="/" class="_entry_s8x7c_158 _logo_s8x7c_11" title="Home"><svg fill="none" viewBox="0 0 87.1 77.8"><ellipse cx="43.572" cy="51.352" rx="41.472" ry="24.375" style="paint-order:stroke;stroke-width:4px;fill:#4c566a;stroke:#edf0f5"/><path d="m68.755 14.387.017 36.603s-.017 1.001-.017 1.514c0 6.786-11.275 12.287-25.183 12.287S18.389 59.29 18.389 52.504V14.387C18.389 7.601 29.664 2.1 43.572 2.1s25.183 5.501 25.183 12.287Z" style="paint-order:stroke;stroke-width:4px;stroke:#edf0f5;fill:#edf0f5"/><path d="M18.372 20.091c10.042 11.58 40.694 11.16 50.4 0V50.99s-.017 1.001-.017 1.514c0 6.786-11.275 12.287-25.183 12.287S18.389 59.29 18.389 52.504z" style="paint-order:stroke;stroke-width:4px;stroke:#edf0f5;fill:#2e3440"/><ellipse cx="43.572" cy="14.387" rx="25.183" ry="12.287" style="paint-order:stroke;stroke-width:4px;fill:#4c566a"/><ellipse cx="33.142" cy="42.26" rx="5.84" ry="7.949" style="paint-order:stroke;stroke-width:4px;stroke:#edf0f5;fill:#4c566a"/><ellipse cx="54.002" cy="42.26" rx="5.84" ry="7.949" style="paint-order:stroke;stroke-width:4px;stroke:#edf0f5;fill:#4c566a"/><path d="M11.746 16.194h46.295v18.34H11.746z" style="fill:#4c566a;stroke:#edf0f5;stroke-width:1.43739px" transform="matrix(1.33778 0 0 1.44503 8.486 26.775)"/><text x="42.449" y="70.848" font-size=".999em" style="fill:#edf0f5;font-family:Arial,sans-serif;font-weight:700;stroke-width:1.70318px;white-space:pre-wrap;text-align:center;text-anchor:middle" transform="matrix(1.34372 0 0 1.50187 -1.874 -35.181)">BETA</text></svg></a> <a class="_title_s8x7c_94" tabindex="-1" href="/">Holy Unblocker</a> <div class="_shiftRight_s8x7c_108"></div> <a title="GitHub" class="_button_s8x7c_38 _git_s8x7c_68" href="https://github.com/holy-unblocker/website2"><svg width="16" height="16" fill="none" viewBox="0 0 512 499.36"><path d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0"/></svg></a> <a href="/settings/" title="Settings" class="_button_s8x7c_38 _center_s8x7c_59"><svg width="24" height="24" fill="none"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.49.49 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6"/></svg></a> </nav> <div class="_content_s8x7c_6"> <div tabindex="-1" class="_cover_s8x7c_7" onclick="setNavExpanded(false)"></div> <div class="_menu_s8x7c_6"> <div class="_top_s8x7c_12"> <div class="_button_s8x7c_38 _center_s8x7c_59" onclick="setNavExpanded(false)"><svg width="24" height="24" fill="none"><path d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"/></svg></div> <div class="_entry_s8x7c_158 _logo_s8x7c_11" title="Home" onclick="setNavExpanded(false)"><svg fill="none" viewBox="0 0 87.1 77.8"><ellipse cx="43.572" cy="51.352" rx="41.472" ry="24.375" style="paint-order:stroke;stroke-width:4px;fill:#4c566a;stroke:#edf0f5"/><path d="m68.755 14.387.017 36.603s-.017 1.001-.017 1.514c0 6.786-11.275 12.287-25.183 12.287S18.389 59.29 18.389 52.504V14.387C18.389 7.601 29.664 2.1 43.572 2.1s25.183 5.501 25.183 12.287Z" style="paint-order:stroke;stroke-width:4px;stroke:#edf0f5;fill:#edf0f5"/><path d="M18.372 20.091c10.042 11.58 40.694 11.16 50.4 0V50.99s-.017 1.001-.017 1.514c0 6.786-11.275 12.287-25.183 12.287S18.389 59.29 18.389 52.504z" style="paint-order:stroke;stroke-width:4px;stroke:#edf0f5;fill:#2e3440"/><ellipse cx="43.572" cy="14.387" rx="25.183" ry="12.287" style="paint-order:stroke;stroke-width:4px;fill:#4c566a"/><ellipse cx="33.142" cy="42.26" rx="5.84" ry="7.949" style="paint-order:stroke;stroke-width:4px;stroke:#edf0f5;fill:#4c566a"/><ellipse cx="54.002" cy="42.26" rx="5.84" ry="7.949" style="paint-order:stroke;stroke-width:4px;stroke:#edf0f5;fill:#4c566a"/><path d="M11.746 16.194h46.295v18.34H11.746z" style="fill:#4c566a;stroke:#edf0f5;stroke-width:1.43739px" transform="matrix(1.33778 0 0 1.44503 8.486 26.775)"/><text x="42.449" y="70.848" font-size=".999em" style="fill:#edf0f5;font-family:Arial,sans-serif;font-weight:700;stroke-width:1.70318px;white-space:pre-wrap;text-align:center;text-anchor:middle" transform="matrix(1.34372 0 0 1.50187 -1.874 -35.181)">BETA</text></svg></div> <div class="_title_s8x7c_94" tabindex="-1" onclick="setNavExpanded(false)"> <span>Holy Unblocker</span> </div> </div> <div class="_menuList_s8x7c_154"> <a data-nav data-selected data-outlined class="_entry_s8x7c_158" title="Home" href="/"> <span class="_icon_s8x7c_225"><svg width="24" height="24" fill="none"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg><svg width="24" height="24" fill="none"><path d="m12 5.69 5 4.5V18h-2v-6H9v6H7v-7.81zM12 3 2 12h3v8h6v-6h2v6h6v-8h3z"/></svg></span> <span>Home</span> </a> <a data-nav class="_entry_s8x7c_158" title="Ultraviolet" href="/uv"> <span class="_icon_s8x7c_225"><svg fill="none" viewBox="0 0 600 600"><path d="M518.039 346.98c2.338 4.996 4.525 9.651 6.864 14.628-17.332 5.519-28.583 16.042-26.666 34.963 1.85 18.26 13.55 28.125 33.266 30.722-6.04 9.163-10.873 17.678-16.824 25.325-28.925 37.166-65.075 65.467-107.513 85.664-27.8 13.232-56.977 21.768-87.761 24.885-65.231 6.603-122.91-11.773-173.788-52.296-28.24-22.493-50.206-50.361-66.356-82.61-12.516-24.993-20.205-51.457-23.574-79.344-2.804-23.21-1.267-46.044 2.536-68.897.13-.786.602-1.514 1.091-2.695 9.988 3.887 19.562 2.969 28.686-2.355 6.718-3.92 11.5-9.548 14.31-16.77 6.045-15.529-1.333-30.703-21.59-43.289 7.756-11.975 14.991-24.313 23.357-35.83 20.872-28.735 45.356-53.993 75.07-73.733 18.396-12.22 38.748-20.58 59.33-28.323 34.917-13.136 70.834-22.867 107.466-29.609 20.84-3.835 42.014-5.937 63.083-8.43 9.378-1.109 18.89-1.97 28.306-1.698 23.376.676 46.955.69 68.534 12.008 15.557 8.16 21.485 21.675 16.014 38.335a108 108 0 0 1-7.963 18.247c-12.905 23.434-23.44 47.823-29.154 74-2.464 11.292-3.838 22.902-4.713 34.443-2.647 34.946 7.008 67.359 21.504 98.619 5.25 11.323 10.878 22.471 16.485 34.04M259.5 191.02c-12.828 0-25.657-.05-38.484.02-7.409.04-11.218 3.743-11.033 10.45.176 6.37 4.074 9.483 12.014 9.484 70.638.01 141.277.006 211.915.005.833 0 1.88.318 2.463-.066 2.913-1.915 6.803-3.41 8.323-6.168 3.718-6.751-2.034-13.717-10.768-13.719-57.81-.011-115.62-.006-174.43-.006m151 204.981c8.16 0 16.324.153 24.48-.048 7.616-.188 11.582-6.62 8.665-13.571-2.055-4.894-6.218-5.397-10.75-5.396-71.11.018-142.22.013-213.331.014-1.165 0-2.344-.08-3.494.059-4.52.546-7.822 4.163-8.066 8.74-.347 6.484 3.678 10.197 11.147 10.198 63.45.008 126.9.004 191.349.004m-123-93c27.814 0 55.629-.04 83.443.043 4.354.014 7.961-.973 9.917-5.165 3.328-7.132-1.176-13.85-9.36-13.863-29.814-.044-59.627-.018-89.44-.018-39.972 0-79.945.032-119.918-.046-4.345-.008-7.921.992-10.108 4.981-3.742 6.828 1.144 14.054 9.551 14.058 41.639.023 83.277.01 125.915.01m-50.687 219.55c6.27 13.203 16.548 20.124 31.326 19.419 13.251-.633 22.6-7.888 28.206-19.304 6.549-13.335 1.499-29.985-10.976-39.677-11.039-8.576-27.54-7.988-39.918 1.423-10.892 8.282-14.603 23.737-8.638 38.139m235.364-411.995c12.083-20.18-5.535-49.3-29.566-47.792-14.54.913-27.913 10.757-31.282 24.884-3.208 13.451 4.18 29.77 16.392 36.208 16.128 8.503 32.994 3.676 44.456-13.3"/></svg></span> <span>Ultraviolet</span> </a> <a data-nav class="_entry_s8x7c_158" title="FAQ" href="/faq"> <span class="_icon_s8x7c_225"><svg width="24" height="24" fill="none"><path d="M11.07 12.85c.77-1.39 2.25-2.21 3.11-3.44.91-1.29.4-3.7-2.18-3.7-1.69 0-2.52 1.28-2.87 2.34L6.54 6.96C7.25 4.83 9.18 3 11.99 3c2.35 0 3.96 1.07 4.78 2.41.7 1.15 1.11 3.3.03 4.9-1.2 1.77-2.35 2.31-2.97 3.45-.25.46-.35.76-.35 2.24h-2.89c-.01-.78-.13-2.05.48-3.15M14 20c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2"/></svg></span> <span>FAQ</span> </a>  <a data-nav class="_entry_s8x7c_158" title="Apps" href="/hub/apps"> <span class="_icon_s8x7c_225"><svg width="24" height="24" fill="none"><path d="M4 8h4V4H4zm6 12h4v-4h-4zm-6 0h4v-4H4zm0-6h4v-4H4zm6 0h4v-4h-4zm6-10v4h4V4zm-6 4h4V4h-4zm6 6h4v-4h-4zm0 6h4v-4h-4z"/></svg></span> <span>Apps</span> </a> <a data-nav data-outlined class="_entry_s8x7c_158" title="Favorites" href="/hub/favorites"> <span class="_icon_s8x7c_225"><svg width="24" height="24" fill="none"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg width="24" height="24" fill="none"><path d="m22 9.24-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28z"/></svg></span> <span>Favorites</span> </a> <div class="_bar_s8x7c_251"></div> <div class="_title_s8x7c_94"><span>Arcade</span></div> <a data-nav class="_entry_s8x7c_158" title="Popular" href="/hub/"> <span class="_icon_s8x7c_225"><svg width="24" height="24" fill="none"><path d="M3 18h6v-2H3zM3 6v2h18V6zm0 7h12v-2H3z"/></svg></span> <span>Popular</span> </a> <a data-nav class="_entry_s8x7c_158" title="All" href="/hub/all"> <span class="_icon_s8x7c_225"><svg width="24" height="24" fill="none"><path d="M3 13h2v-2H3zm0 4h2v-2H3zm0-8h2V7H3zm4 4h14v-2H7zm0 4h14v-2H7zM7 7v2h14V7z"/></svg></span> <span>All</span> </a> <div class="_title_s8x7c_94"><span>Genre</span></div> <div class="_genres_s8x7c_256"> <a title="Action" class="_entry_s8x7c_158" href="/hub/action">Action</a><a title="Platformer" class="_entry_s8x7c_158" href="/hub/platformer">Platformer</a><a title="Shooter" class="_entry_s8x7c_158" href="/hub/shooter">Shooter</a><a title="RPG" class="_entry_s8x7c_158" href="/hub/rpg">RPG</a><a title="Sandbox" class="_entry_s8x7c_158" href="/hub/sandbox">Sandbox</a><a title="Survival" class="_entry_s8x7c_158" href="/hub/survival">Survival</a><a title="Sports" class="_entry_s8x7c_158" href="/hub/sports">Sports</a><a title="Puzzle" class="_entry_s8x7c_158" href="/hub/puzzle">Puzzle</a> </div> </div> </div> <main class="_main_1w0th_61"> <div class="_title_1w0th_103"> <span class="_big_1w0th_112"> <span>Ending Internet </span> <span class="_pretty_1w0th_144"> <span>Censorship.</span> <svg  class="_prettyUnderline_1w0th_151" viewBox="0 0 390 55" fill="none">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="192.539" y1="1.537" x2="192.539" y2="51.098"
+      id="gradient-0"
+      gradientTransform="matrix(-0.001215, 0.999999, -7.795296, -0.009463, 402.484802, -163.600372)">
+      <stop offset="0" style="stop-color: rgba(135, 149, 221, 1)"></stop>
+      <stop offset="1" style="stop-color: rgba(56, 80, 198, 1)"></stop>
+    </linearGradient>
+  </defs>
+  <path
+    style="paint-order: fill; fill: none; stroke: url(#gradient-0); stroke-width: 5px; stroke-linecap: round;"
+    d="M 3 8.997 C 3 8.997 386.2758229569146 -1.5119911685214125 386.872 5.292 C 387.1840859001393 8.853743500517725 283.1432491171007 17.09919545317559 283.106 22.586 C 283.07461319934777 27.209283823450303 356.0628379238926 30.04524568361604 356.607 35.864 C 357.0292218177662 40.3788405823717 314.606 51.924 314.606 51.924" />
+</svg> </span> </span> <h3 class="_small_1w0th_127"> <span>Privacy right at your fingertips.</span> </h3> </div> <div class="_focus_1w0th_74"> <button type="button" class="_ThemeButton_9j0th_24 _button_1w0th_85" onclick="setNavExpanded(true)"> <span>Get Started</span> </button> <div class="_omnibox_1foqg_18" id="omnibox" data-search-format="https://duckduckgo.com/?q=%s" data-astro-transition-persist="astro-yvzglkfc-1"> <div class="_ThemeInputBar_9j0th_22 _inputBar_1foqg_5"> <form> <input type="text" placeholder="Search DuckDuckGo or type a URL" autocomplete="off" class="_thinPadRight_9j0th_88"> </form> <button class="_clearButton_1foqg_48" id="searchClear"> <svg> <use href="#clearButton"></use> </svg> </button> <button class="_searchButton_1foqg_27" id="searchIcon"> <svg> <use href="#searchGlass"></use> </svg> </button> </div> <div class="_suggested_1foqg_86" id="omniboxSuggest"></div> </div> <svg width="0" height="0" fill="none" style="position:fixed"><defs><svg id="clearButton" fill="none" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg><svg id="searchGlass" fill="none" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"/></svg><svg id="northWest" fill="none" viewBox="0 0 24 24"><path d="M5 15h2V8.41L18.59 20 20 18.59 8.41 7H15V5H5z"/></svg></defs></svg> <div class="_service_1dzcs_8" data-astro-transition-persist="astro-5bq5kat3-4"> <div class="_buttons_1dzcs_37"> <div class="_button_1dzcs_37" id="closeService"><svg width="24" height="24" fill="none"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></div> <img class="_tabicon_1dzcs_56" alt="" id="serviceIcon"> <div class="_defaulttabicon_1dzcs_47" id="defaultIcon"><svg width="24" height="24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39"/></svg></div> <p class="_title_1dzcs_62" id="serviceTitle"></p> <div class="_shiftRight_1dzcs_69"></div> <div id="openInNew" class="_button_1dzcs_37"><svg width="24" height="24" fill="none"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"/></svg></div> <div class="_button_1dzcs_37" id="openInFullscreen"><svg width="24" height="24" fill="none"><path d="M7 14H5v5h5v-2H7zm-2-4h2V7h3V5H5zm12 7h-3v2h5v-5h-2zM14 5v2h3v3h2V5z"/></svg></div> </div> <iframe class="_embed_1dzcs_11" id="serviceEmbed" title="embed"></iframe> </div> <!-- this won't persist --> <div data-proxy-mode="embedded" id="proxyModeSetting"></div>   </div> <div class="_nag_1w0th_172"> <a class="_themeLink_9j0th_5" href="https://billing.billigerhost.com/aff.php?aff=94">Proxy site hosting starting at $6.99. Check out BilligerHost.</a> </div> <a class="_poweredBy_1w0th_158" href="/uv"> <svg fill="none" viewBox="0 0 600 600"><path d="M518.039 346.98c2.338 4.996 4.525 9.651 6.864 14.628-17.332 5.519-28.583 16.042-26.666 34.963 1.85 18.26 13.55 28.125 33.266 30.722-6.04 9.163-10.873 17.678-16.824 25.325-28.925 37.166-65.075 65.467-107.513 85.664-27.8 13.232-56.977 21.768-87.761 24.885-65.231 6.603-122.91-11.773-173.788-52.296-28.24-22.493-50.206-50.361-66.356-82.61-12.516-24.993-20.205-51.457-23.574-79.344-2.804-23.21-1.267-46.044 2.536-68.897.13-.786.602-1.514 1.091-2.695 9.988 3.887 19.562 2.969 28.686-2.355 6.718-3.92 11.5-9.548 14.31-16.77 6.045-15.529-1.333-30.703-21.59-43.289 7.756-11.975 14.991-24.313 23.357-35.83 20.872-28.735 45.356-53.993 75.07-73.733 18.396-12.22 38.748-20.58 59.33-28.323 34.917-13.136 70.834-22.867 107.466-29.609 20.84-3.835 42.014-5.937 63.083-8.43 9.378-1.109 18.89-1.97 28.306-1.698 23.376.676 46.955.69 68.534 12.008 15.557 8.16 21.485 21.675 16.014 38.335a108 108 0 0 1-7.963 18.247c-12.905 23.434-23.44 47.823-29.154 74-2.464 11.292-3.838 22.902-4.713 34.443-2.647 34.946 7.008 67.359 21.504 98.619 5.25 11.323 10.878 22.471 16.485 34.04M259.5 191.02c-12.828 0-25.657-.05-38.484.02-7.409.04-11.218 3.743-11.033 10.45.176 6.37 4.074 9.483 12.014 9.484 70.638.01 141.277.006 211.915.005.833 0 1.88.318 2.463-.066 2.913-1.915 6.803-3.41 8.323-6.168 3.718-6.751-2.034-13.717-10.768-13.719-57.81-.011-115.62-.006-174.43-.006m151 204.981c8.16 0 16.324.153 24.48-.048 7.616-.188 11.582-6.62 8.665-13.571-2.055-4.894-6.218-5.397-10.75-5.396-71.11.018-142.22.013-213.331.014-1.165 0-2.344-.08-3.494.059-4.52.546-7.822 4.163-8.066 8.74-.347 6.484 3.678 10.197 11.147 10.198 63.45.008 126.9.004 191.349.004m-123-93c27.814 0 55.629-.04 83.443.043 4.354.014 7.961-.973 9.917-5.165 3.328-7.132-1.176-13.85-9.36-13.863-29.814-.044-59.627-.018-89.44-.018-39.972 0-79.945.032-119.918-.046-4.345-.008-7.921.992-10.108 4.981-3.742 6.828 1.144 14.054 9.551 14.058 41.639.023 83.277.01 125.915.01m-50.687 219.55c6.27 13.203 16.548 20.124 31.326 19.419 13.251-.633 22.6-7.888 28.206-19.304 6.549-13.335 1.499-29.985-10.976-39.677-11.039-8.576-27.54-7.988-39.918 1.423-10.892 8.282-14.603 23.737-8.638 38.139m235.364-411.995c12.083-20.18-5.535-49.3-29.566-47.792-14.54.913-27.913 10.757-31.282 24.884-3.208 13.451 4.18 29.77 16.392 36.208 16.128 8.503 32.994 3.676 44.456-13.3"/></svg> <span><span>Powered by </span><b><span>Ultraviolet</span></b></span> </a> </main>  <footer class="_footer_b7gzc_5"> <svg  xmlns:xlink="http://www.w3.org/1999/xlink"
+	viewBox="0 24 150 28" fill="none">
+	<defs>
+		<path id="wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+	</defs>
+	<use xlink:href="#wave" x="48" y="0" />
+	<use xlink:href="#wave" x="48" y="3" />
+	<use xlink:href="#wave" x="48" y="7" />
+</svg> <div class="_background_b7gzc_57"> <div class="_content_b7gzc_64"> <a class="_thing_b7gzc_81 _link_b7gzc_90" href="/contact">Contact</a> <a class="_thing_b7gzc_81 _link_b7gzc_90" href="/credits">Credits</a> <a class="_thing_b7gzc_81 _link_b7gzc_90" href="/privacy">Privacy</a> <a class="_thing_b7gzc_81 _link_b7gzc_90" href="/terms"> <span>Terms of Use</span> <span>Terms</span> </a> <div class="_thing_b7gzc_81">
+&copy; <span>Holy Unblocker</span> 2024 </div> </div> </div> </footer> </div>  <script src="/baremux/index.js" defer></script> <script src="/uv/uv.bundle.js"></script> <script src="/uv/uv.config.js"></script> <div id="wispServerThing" data-wispServer="%{ws}//api.%{host}/"></div> </body></html>
